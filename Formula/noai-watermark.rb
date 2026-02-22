@@ -1,13 +1,13 @@
 class NoaiWatermark < Formula
   desc "Remove invisible AI watermarks and manage AI image metadata"
   homepage "https://github.com/mertizci/noai-watermark"
-  version "0.1.24"
+  version "0.1.26"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mertizci/noai-watermark/releases/download/v0.1.24/noai-watermark-darwin-arm64.tar.gz"
-      sha256 "66c4414c9e164b3dd7cd90e8a17209950de83122ffa1e5e7d9aed4daf75096f1"
+      url "https://github.com/mertizci/noai-watermark/releases/download/v0.1.26/noai-watermark-darwin-arm64.tar.gz"
+      sha256 "95614d1673abeea689fd26ea27e37515e12ac77ba5926a38f20994412fe11d2f"
     end
   end
 
