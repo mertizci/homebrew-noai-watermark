@@ -1,0 +1,26 @@
+class NoaiWatermark < Formula
+  desc "Remove invisible AI watermarks and manage AI image metadata"
+  homepage "https://github.com/mertizci/noai-watermark"
+  version "0.1.20"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/mertizci/noai-watermark/releases/download/v0.1.20/noai-watermark-darwin-arm64.tar.gz"
+      sha256 "PLACEHOLDER"
+    end
+
+    on_intel do
+      url "https://github.com/mertizci/noai-watermark/releases/download/v0.1.20/noai-watermark-darwin-amd64.tar.gz"
+      sha256 "PLACEHOLDER"
+    end
+  end
+
+  def install
+    bin.install "noai-watermark"
+  end
+
+  test do
+    assert_match "noai-watermark", shell_output("#{bin}/noai-watermark --help")
+  end
+end
